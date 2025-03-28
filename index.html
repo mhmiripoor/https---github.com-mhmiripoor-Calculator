@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Calculator</title>
+  </head>
+  <body class="bg-sky-900 flex justify-center item-center p-4 min-h-screen">
+    <div
+      class="flex flex-col bg-white shadow-2xl py-4 px-4 rounded-[15px]"
+    >
+      <input
+        type="text"
+        id="display"
+        readonly
+        class="px-3 py-2 my-8 text-lg shadow-xl rounder-[5px] focus-visible:outline-none "
+      />
+      <!-- `readonly`: atribute for nan-editable -->
+      <div class="grid grid-cols-4 gap-4 gap-[8px]">
+        <button
+          type="button"
+          id="clear"
+          class="w-[63px] h-[63px] rounded-full bg-sky-500 shadow-lg hover:shadow-inner"
+        >
+          AC
+        </button>
+        <button
+          type="button"
+            id="back"
+          class="w-[63px] h-[63px] rounded-full bg-sky-500 shadow-lg hover:shadow-inner"
+        >
+          Back
+        </button>
+        <button
+          type="button"
+          class="w-[63px] h-[63px] rounded-full bg-sky-500 shadow-lg hover:shadow-inner"
+        >
+          C
+        </button>
+        <button
+value="%"
+        type="button"
+          class="calciBTN rounded-full bg-white shadow-lg w-[63px] h-[63px] hover:shadow-inner"
+        >
+          %
+        </button>
+        <button
+        value="9"
+          type="button"
+          class="calciBTN w-[63px] h-[63px] rounded-full bg-sky-500 shadow-lg hover:shadow-inner"
+        >
+          9
+        </button>
+        <button
+        value="8"
+          type="button"
+          class="calciBTN w-[63px] h-[63px] rounded-full bg-sky-500 shadow-lg hover:shadow-inner"
+        >
+          8</button
+        ><button
+        value="7"
+          type="button"
+          class="calciBTN w-[63px] h-[63px] rounded-full bg-sky-500 shadow-lg hover:shadow-inner"
+        >
+          7</button
+        ><button
+          type="button"
+          value="/"
+          class="calciBTN w-[63px] h-[63px] rounded-full bg-white shadow-lg hover:shadow-inner"
+        >
+          /</button
+        ><button
+        value="6"
+          type="button"
+          class="calciBTN w-[63px] h-[63px] rounded-full bg-sky-500 shadow-lg hover:shadow-inner"
+        >
+          6</button
+        ><button
+          type="button"
+          value="5"
+          class="calciBTN w-[63px] h-[63px] rounded-full bg-sky-500 shadow-lg hover:shadow-inner"
+        >
+          5</button
+        ><button
+          type="button"
+          class="calciBTN w-[63px] h-[63px] rounded-full bg-sky-500 shadow-lg hover:shadow-inner"
+          value="4">
+          4</button
+        >
+        <button
+          type="button"
+            value="+"
+          class="calciBTN w-[63px] h-[63px] rounded-full bg-white shadow-lg hover:shadow-inner"
+        >
+
+          +</button>
+        <button
+          type="button"
+          class="calciBTN w-[63px] h-[63px] rounded-full bg-sky-500 shadow-lg hover:shadow-inner"
+          value="3">
+          3</button
+        ><button
+          type="button"
+          class="calciBTN w-[63px] h-[63px] rounded-full bg-sky-500 shadow-lg hover:shadow-inner"
+        >
+          2</button
+          value="2"><button
+          type="button"
+          class="calciBTN w-[63px] h-[63px] rounded-full bg-sky-500 shadow-lg hover:shadow-inner"
+          value="1">
+          1</button
+        ><button
+          type="button"
+          value="*"
+          class="calciBTN w-[63px] h-[63px] rounded-full bg-white shadow-lg hover:shadow-inner"
+        >
+          *</button
+        ><button
+          type="button"
+          class="calciBTN w-[63px] h-[63px] rounded-full bg-sky-500 shadow-lg hover:shadow-inner"
+          value="0">
+          0</button
+        ><button
+          type="button"
+          value=".  "
+          class="calciBTN w-[63px] h-[63px] rounded-full bg-sky-500 shadow-lg hover:shadow-inner"
+        >
+          ,
+        </button>
+        <button
+          type="button"
+          class="w-[63px] h-[63px] text-white rounded-full bg-sky-800 shadow-lg hover:shadow-inner"
+          id="equal"
+        >
+          =</button
+        >
+        <button
+          type="button"
+            value="-"
+          class="calciBTN w-[63px] h-[63px] rounded-full bg-white shadow-lg hover:shadow-inner"
+        >
+
+          -</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
